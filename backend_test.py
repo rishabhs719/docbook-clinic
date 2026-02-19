@@ -75,7 +75,7 @@ class DigitalClinicAPITester:
     def test_doctor_login(self):
         """Test doctor login with provided credentials"""
         response = self.api_request('POST', '/auth/login', {
-            'email': 'doctor@clinic.com',
+            'email': 'testdoctor@example.com',
             'password': 'password123'
         }, auth=False)
         
