@@ -1,0 +1,146 @@
+{
+  "identity": {
+    "name": "The Glass Clinic",
+    "persona": "E1: The Anti-AI Designer",
+    "tone": "Clinical Sanctuary - Professional, Transparent, Calm, Efficient",
+    "theme_mode": "light",
+    "description": "A medical platform that balances clinical precision with human warmth. It avoids the sterile 'hospital white' by introducing soft organic textures and 'crystal glass' surfaces for depth."
+  },
+  "typography": {
+    "primary_font": "Manrope",
+    "secondary_font": "Public Sans",
+    "font_cdn": "https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&family=Public+Sans:wght@300;400;500;600;700&display=swap",
+    "rules": {
+      "headings": "font-family: 'Manrope', sans-serif; letter-spacing: -0.02em; font-weight: 700;",
+      "body": "font-family: 'Public Sans', sans-serif; line-height: 1.6;",
+      "eyebrow": "font-family: 'Manrope', sans-serif; text-transform: uppercase; letter-spacing: 0.1em; font-size: 0.75rem; font-weight: 600;"
+    }
+  },
+  "colors": {
+    "palette": {
+      "brand": {
+        "primary": "#0F766E",
+        "primary_foreground": "#FFFFFF",
+        "secondary": "#F0FDFA",
+        "secondary_foreground": "#115E59",
+        "accent": "#F43F5E",
+        "accent_foreground": "#FFFFFF"
+      },
+      "neutral": {
+        "background": "#F8FAFC",
+        "foreground": "#0F172A",
+        "card": "#FFFFFF",
+        "border": "#E2E8F0",
+        "input": "#F1F5F9"
+      },
+      "semantic": {
+        "success": "#10B981",
+        "warning": "#F59E0B",
+        "error": "#EF4444",
+        "info": "#3B82F6"
+      }
+    },
+    "gradients": {
+      "hero_overlay": "linear-gradient(135deg, rgba(15, 118, 110, 0.1) 0%, rgba(255, 255, 255, 0) 100%)",
+      "glass_surface": "linear-gradient(180deg, rgba(255, 255, 255, 0.8) 0%, rgba(255, 255, 255, 0.4) 100%)"
+    }
+  },
+  "visual_enhancers": {
+    "glassmorphism": {
+      "class": "bg-white/70 backdrop-blur-xl border border-white/40 shadow-sm",
+      "usage": "Sticky headers, floating interactive cards, toast notifications"
+    },
+    "shadows": {
+      "soft": "0 4px 20px -2px rgba(15, 118, 110, 0.05)",
+      "float": "0 20px 40px -4px rgba(15, 118, 110, 0.1)"
+    },
+    "radius": {
+      "default": "rounded-xl",
+      "button": "rounded-full",
+      "card": "rounded-2xl"
+    }
+  },
+  "layout_strategies": {
+    "landing_page": {
+      "hero": "Asymmetric 'Tetris' Grid. Image right (60%), Text left (40%). Overlapping elements.",
+      "services": "Bento Grid (grid-cols-1 md:grid-cols-3). Cards with subtle hover lift.",
+      "spacing": "Generous. Section padding: py-24 or py-32."
+    },
+    "dashboard": {
+      "structure": "Slim vertical sidebar (icon only on mobile). Top bar for search/profile.",
+      "grid": "High-density Bento Grid for widgets. Gap-6.",
+      "cards": "Flat white cards with 1px border-slate-100. No heavy shadows to reduce visual noise."
+    }
+  },
+  "component_rules": {
+    "buttons": {
+      "primary": "bg-primary text-white rounded-full px-8 py-6 hover:bg-primary/90 transition-all shadow-lg hover:shadow-primary/20",
+      "secondary": "bg-white text-primary border border-primary/20 rounded-full px-8 py-6 hover:bg-primary/5 transition-all",
+      "ghost": "text-slate-600 hover:text-primary hover:bg-primary/5 rounded-lg"
+    },
+    "inputs": {
+      "style": "bg-slate-50 border-transparent focus:border-primary focus:ring-2 focus:ring-primary/20 rounded-xl h-12 px-4 transition-all"
+    },
+    "cards": {
+      "marketing": "bg-white rounded-2xl p-8 border border-slate-100 shadow-soft hover:shadow-float transition-all duration-500",
+      "dashboard": "bg-white rounded-xl p-6 border border-slate-200/60"
+    }
+  },
+  "assets": {
+    "images": {
+      "hero_doctor": {
+        "url": "https://images.unsplash.com/photo-1620928269189-dc4ee9d981c0",
+        "alt": "Professional doctor portrait",
+        "position": "Hero Section Right"
+      },
+      "female_doctor_card": {
+        "url": "https://images.unsplash.com/photo-1659353888158-271b148d924c",
+        "alt": "Specialist doctor",
+        "position": "Team Section"
+      },
+      "clinic_interior": {
+        "url": "https://images.unsplash.com/photo-1759691554837-be93ac47760b",
+        "alt": "Modern clinic waiting area",
+        "position": "About Section Background"
+      },
+      "patient_care": {
+        "url": "https://images.pexels.com/photos/8312897/pexels-photo-8312897.jpeg",
+        "alt": "Compassionate patient care",
+        "position": "Services Section"
+      },
+      "abstract_bg": {
+        "url": "https://images.unsplash.com/photo-1614853316657-84cba51df68c",
+        "alt": "Medical DNA Abstract",
+        "position": "Subtle Background Overlay"
+      }
+    },
+    "icons": {
+      "library": "lucide-react",
+      "style": "Stroke width 1.5px. Rounded joins."
+    }
+  },
+  "animations": {
+    "micro_interactions": "transition-all duration-300 ease-out",
+    "page_load": "animate-in fade-in slide-in-from-bottom-4 duration-700",
+    "hover_lift": "hover:-translate-y-1 hover:shadow-lg"
+  },
+  "accessibility": {
+    "contrast_check": "Ensure text colors meet WCAG AA against backgrounds.",
+    "focus_states": "Visible ring-2 ring-primary ring-offset-2 on all interactive elements.",
+    "reduced_motion": "Respect prefers-reduced-motion media query."
+  },
+  "universal_guidelines": [
+    "Do NOT use gradients for text.",
+    "Do NOT use pure #000000. Use #0F172A (Slate-900).",
+    "Always use data-testid on interactive elements.",
+    "Use 'sonner' for all toast notifications.",
+    "Forms must use 'react-hook-form' with 'zod' validation.",
+    "Dashboard charts must use 'recharts' via Shadcn Charts.",
+    "Never center text in dashboard widgets; left-align for scanability."
+  ],
+  "instructions_to_main_agent": {
+    "setup": "Install fonts in index.css. Configure tailwind.config.js with the brand colors.",
+    "landing": "Build a high-trust, asymmetric landing page. Use the 'Glassmorphism' style for the booking widget.",
+    "dashboard": "Build a high-density, clean dashboard. Prioritize data clarity over decoration."
+  }
+}
